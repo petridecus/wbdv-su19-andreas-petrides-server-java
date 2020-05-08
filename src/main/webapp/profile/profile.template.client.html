@@ -3,78 +3,100 @@
     <head>
         <meta charset="UTF-8">
         <title>Profile</title>
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../styles.css">
+
+        <link rel="stylesheet" href="./profile.style.client.css">
     </head>
+
     <body>
-        <div class="container">
-        <h1>Profile</h1>
-        <form>
-            <div class="form-group row">
-                <label for="profile-username" class="col-sm-2 col-form-label">Username</label>
-                <div class="col-sm-10">
-                    <input class="wbdv-field wbdv-username" type="text"
-                            id="profile-username"
-                            placeholder="Alice">
-                </div>
+        <div class="bg"></div>
+        <div class="container-fluid">
+    
+        <div class="row top-border"></div>
+        
+        <div class="whole-box rounded-30 border border-dark">
+            <div class="heading profile-heading rounded-30">
+                <h1>Profile</h1>
             </div>
-            <div class="form-group row">
-                <label for="profile-password" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                    <input class="wbdv-field wbdv-password" type="password"
-                            id="profile-password"
-                            placeholder="#@12345abc">
+
+            <form class="user-form">
+                <div class="form-group row">
+                    <label for="profile-username" class="col-sm-2 col-form-label">Username</label>
+                    <div class="col-sm-10">
+                        <input class="wbdv-field wbdv-username" type="text"
+                                id="profile-username"
+                                placeholder="Alice">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label for="profile-phone" class="col-sm-2 col-form-label">Phone</label>
-                <div class="col-sm-10">
-                    <input class="wbdv-field wbdv-phone" type="number"
-                            id="profile-phone"
-                            placeholder="(123)-456-7890">
+
+                <div class="form-group row">
+                    <label for="profile-password" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input class="wbdv-field wbdv-password" type="password"
+                                id="profile-password"
+                                placeholder="#@12345abc">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label for="profile-email" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                    <input class="wbdv-field wbdv-email" type="email"
-                            id="profile-email"
-                            placeholder="apetrides@gmail.com">
+
+                <div class="form-group row">
+                    <label for="profile-phone" class="col-sm-2 col-form-label">Phone</label>
+                    <div class="col-sm-10">
+                        <input class="wbdv-field wbdv-phone" type="number"
+                                id="profile-phone"
+                                placeholder="(123)-456-7890">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label for="profile-dob" class="col-sm-2 col-form-label">Date of birth</label>
-                <div class="col-sm-10">
-                    <input class="wbdv-field wbdv-dob" type="date"
-                            id="profile-dob"
-                            placeholder="03/02/1998">
+
+                <div class="form-group row">
+                    <label for="profile-email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input class="wbdv-field wbdv-email" type="email"
+                                id="profile-email"
+                                placeholder="apetrides@gmail.com">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label for="profile-role" class="col-sm-2 col-form-label">Role</label>
-                <div class="col-sm-10">
-                    <select class="wbdv-field wbdv-role" name="role-options" id="profile-role-options">
-                        <option value="Faculty">Faculty</option>
-                        <option value="Student">Student</option>
-                        <option value="Admin">Admin</option>
-                    </select>
+
+                <div class="form-group row">
+                    <label for="profile-dob" class="col-sm-2 col-form-label">Date of birth</label>
+                    <div class="col-sm-10">
+                        <input class="wbdv-field wbdv-dob" type="date"
+                                id="profile-dob"
+                                placeholder="03/02/1998">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-8">
-                    <a href="../profile/profile.template.client.html" id="updateBtn" class="btn btn-success btn-block wbdv-button wbdv-update">Update</a>
+
+                <div class="form-group row">
+                    <label for="profile-role" class="col-sm-2 col-form-label">Role</label>
+                    <div class="col-sm-10">
+                        <select class="wbdv-field wbdv-role" name="role-options" id="profile-role-options">
+                            <option value="Faculty">Faculty</option>
+                            <option value="Student">Student</option>
+                            <option value="Admin">Admin</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-8">
-                    <a href="../login/login.template.client.html" id="logoutBtn" class="btn btn-danger btn-block wbdv-button wbdv-logout">Logout</a>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-8">
+                        <a href="../profile/profile.template.client.html" id="updateBtn" class="btn btn-success btn-block wbdv-button wbdv-update">Update</a>
+                    </div>
                 </div>
-            </div>
-        </form>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-8">
+                        <a href="../login/login.template.client.html" id="logoutBtn" class="btn btn-danger btn-block wbdv-button wbdv-logout">Logout</a>
+                    </div>
+                </div>
+            </form>
+        </div>
         </div>
     </body>
 </html>
