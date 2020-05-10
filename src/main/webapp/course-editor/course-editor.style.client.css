@@ -1,0 +1,62 @@
+.btn, .btn:hover {
+    color: azure;
+}
+
+.nav-light-text {
+    color: azure;
+}
+
+.background-frame {
+    background-image: linear-gradient(to right, #333333, #222222);
+    height: 100vh;
+}
+
+.content-frame {
+    padding: 2vh;
+}
+
+.content-frame-right {
+    background-color: azure;
+    margin: 6vh;
+}
+
+.module-list {
+    color: azure;
+    padding: 2vh;
+    background-size: cover;
+}
+
+.module {
+    margin: 2vh;
+    background-color: #444444;
+    height: min-content;
+    padding: 1vh;
+}
+
+.module:hover {
+    background-color: #666666;
+}
+
+.module:active {
+    background-color: #555555;
+}
+
+.topic-btn {
+    margin: 2vh;
+}
+
+.dark-text {
+    color: #444444;
+}
+
+.dark-text:hover {
+    color: #444444;
+    background-color: #c0cccc;
+}
+
+.topic-frame {
+    color: #333333;
+    margin: 2vh;
+    padding: 2vh;
+    background-color: #f9ffff;
+}

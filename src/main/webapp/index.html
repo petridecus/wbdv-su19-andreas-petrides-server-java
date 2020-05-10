@@ -12,11 +12,55 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <ul>
-            List of pages
-            <li>Page 1</li>
-            <li>Page 2</li>
-            <li>Page 3</li>
-        </ul>
+        <div class="collapse" id="navbarLinks">
+            <ul class="row nav nav-pills bg-dark homepage-button-group">
+                <div class="col-8 float-left">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-dark" href="./login/login.template.client.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-dark" href="./profile/profile.template.client.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-dark" href="./register/register.template.client.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-dark" href="./course-editor/course-editor.template.client.html">Course Editor</a>
+                    </li>
+                </div>
+                <div class="col-4 new-course">
+                    <li class="nav-item float-left">
+                        <form class="form-inline">
+                            <input class="form-control" placeholder="New Course">
+                        </form>
+                    </li>
+                    <li class="nav-item float-right">
+                        <a class="nav-link btn btn-dark rounded-circle" href="#">+</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="col-1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col-11">
+                <div class="navbar-brand float-left">CS4550 Java Server</div>
+                <div class="nav-item active float-right my-name">Andreas Petrides</div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <ul class="list-group">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item">Item 3</li>
+                <li class="list-group-item">Item 4</li>
+                <li class="list-group-item">Item 5</li>
+            </ul>
+        </div>
     </body>
 </html>
