@@ -20,28 +20,28 @@
     margin: 6vh;
 }
 
-.module-list {
+.wbdv-module-list {
     color: azure;
     padding: 2vh;
     background-size: cover;
 }
 
-.module {
+.wbdv-module-item {
     margin: 2vh;
     background-color: #444444;
     height: min-content;
     padding: 1vh;
 }
 
-.module:hover {
+.wbdv-module-item:hover {
     background-color: #666666;
 }
 
-.module:active {
+.wbdv-module-item:active {
     background-color: #555555;
 }
 
-.topic-btn {
+.wbdv-topic-pill {
     margin: 2vh;
 }
 

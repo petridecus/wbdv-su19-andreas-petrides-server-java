@@ -17,54 +17,62 @@
         <div class="container-fluid background-frame">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-left">
             <div class="col-1">
-                <a class="float-left nav-link btn btn-dark rounded-circle nav-light-text" href="../">&times;</a>
+                <a class="wbdv-course-editor wbdv-close float-left nav-link btn btn-dark rounded-circle nav-light-text" href="../">&times;</a>
             </div>
-            <div class="col-11 d-flex align-items-center">
-                <div class="navbar-brand float-left">Course Title</div>
-                <div class="nav-item nav-light-text ml-auto">Test123</li>
+            <div class="col-11 d-flex flex-row align-items-center">
+                <div class="col-2 wbdv-course-title navbar-brand float-left">Course Title</div>
+                <div class="page-tabs col-8">
+                    <a href="#" class="wbdv-page-tab btn nav-item light-text mr-auto">Page tab 1</a>
+                    <a href="#" class="wbdv-page-tab btn nav-item light-text mr-auto">Page tab 2</a>
+                    <a href="#" class="wbdv-page-tab btn nav-item light-text mr-auto">Page tab 3</a>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="wbdv-new-page-btn btn light-text mr-auto">&plus;</a>
+                </div>
             </div>
         </nav>
         <div class="d-flex flex-row below-nav">
-            <div class="col-3 content-frame module-list rounded">
+            <div class="col-3 content-frame wbdv-module-list rounded">
                 <ul class="list-group">
-                    <li class="btn list-group-item d-flex flex-row align-items-center module rounded"> 
+                    <li class="btn list-group-item d-flex flex-row align-items-center wbdv-module-item rounded"> 
                         <a class="btn" href="###">
-                            <div class="mr-auto">Module 1</div>
-                            <a class="ml-auto btn module-btn rounded-circle align-items-center" href="#">&times;</a>
+                            <div class="wbdv-module-item-title mr-auto">Module 1</div>
+                            <a class="wbdv-module-item-delete-btn ml-auto btn rounded-circle" href="#">&times;</a>
                         </a>
                     </li>
-                    <li class="btn list-group-item d-flex flex-row align-items-center module rounded"> 
+                    <li class="btn list-group-item d-flex flex-row align-items-center wbdv-module-item rounded"> 
                         <a class="btn" href="###">
-                            <div class="mr-auto">Module 2</div>
-                            <a class="ml-auto btn module-btn rounded-circle align-items-center" href="#">&times;</a>
+                            <div class="wbdv-module-item-title mr-auto">Module 2</div>
+                            <a class="wbdv-module-item-delete-btn ml-auto btn rounded-circle align-items-center" href="#">&times;</a>
                         </a>
                     </li>
-                    <li class="btn list-group-item d-flex flex-row align-items-center module rounded"> 
+                    <li class="btn list-group-item d-flex flex-row align-items-center wbdv-module-item rounded"> 
                         <a class="btn" href="###">
-                            <div class="mr-auto">Module 3</div>
-                            <a class="ml-auto btn module-btn rounded-circle align-items-center" href="#">&times;</a>
+                            <div class="wbdv-module-item-title mr-auto">Module 3</div>
+                            <a class="wbdv-module-item-delete-btn ml-auto btn rounded-circle align-items-center" href="#">&times;</a>
                         </a>
                     </li>
-                    <li class="btn list-group-item d-flex flex-row align-items-center module rounded"> 
+                    <li class="btn list-group-item d-flex flex-row align-items-center wbdv-module-item rounded"> 
                         <a class="btn" href="###">
-                            <div class="mr-auto">Module 4</div>
-                            <a class="ml-auto btn module-btn rounded-circle align-items-center" href="#">&times;</a>
+                            <div class="wbdv-module-item-title mr-auto">Module 4</div>
+                            <a class="wbdv-module-item-delete-btn ml-auto btn rounded-circle align-items-center" href="#">&times;</a>
                         </a>
                     </li>
-                    <li class="btn list-group-item d-flex flex-row align-items-center module rounded"> 
+                    <li class="btn list-group-item d-flex flex-row align-items-center wbdv-module-item rounded"> 
                         <a class="btn" href="###">
-                            <div class="mr-auto">Module 5</div>
-                            <a class="ml-auto btn module-btn rounded-circle align-items-center" href="#">&times;</a>
+                            <div class="wbdv-module-item-title mr-auto">Module 5</div>
+                            <a class="wbdv-module-item-delete-btn ml-auto btn rounded-circle align-items-center" href="#">&times;</a>
                         </a>
                     </li>
                 </ul>
+                <a href="#" class="wbdv-module-item-add-btn btn light-text rounded-circle">&plus;</a>
             </div>
             <div class="col-8 content-frame content-frame-right rounded">
-                <div class="d-flex flex-row align-items-center">
-                    <a class="btn btn-dark topic-btn" href="#" role="button">Topic 1</a>
-                    <a class="btn btn-dark topic-btn" href="#" role="button">Topic 2</a>
-                    <a class="btn btn-dark topic-btn" href="#" role="button">Topic 3</a>
-                    <a class="btn rounded-circle dark-text ml-auto" href="#" role="button">&plus;</a>
+                <div class="wbdv-topic-pill-list d-flex flex-row align-items-center">
+                    <a class="wbdv-topic-pill btn btn-dark" href="#" role="button">Topic 1</a>
+                    <a class="wbdv-topic-pill btn btn-dark" href="#" role="button">Topic 2</a>
+                    <a class="wbdv-topic-pill btn btn-dark" href="#" role="button">Topic 3</a>
+                    <a class="wbdv-topic-add-btn btn rounded-circle dark-text ml-auto" href="#" role="button">&plus;</a>
                 </div>
                 <div class="topic-frame border border-dark rounded">
                     <h4>Heading</h4>
