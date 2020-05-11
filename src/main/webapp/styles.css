@@ -13,6 +13,10 @@ html, body, .container-fluid {
     border: 0;
 }
 
+.form-group {
+    margin-bottom: 2vh;
+}
+
 .wbdv-hamburger {
     margin-right: 10vw;
 }
