@@ -100,7 +100,16 @@ h6 {
 }
 
 .wbdv-course {
+    width: 100%;
     padding: .2vh;
+}
+
+.wbdv-row {
+    padding-left: 0;
+}
+
+.wbdv-delete {
+    justify-content: right;
 }
 
 .wbdv-sort {
