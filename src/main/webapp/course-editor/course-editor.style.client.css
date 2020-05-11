@@ -2,28 +2,30 @@
     color: azure;
 }
 
+.row {
+    padding-right: 2vw;
+}
+
 .nav-light-text {
     color: azure;
 }
 
-.background-frame {
+.container-fluid {
     background-image: linear-gradient(to right, #333333, #222222);
-    height: 100vh;
 }
 
 .content-frame {
-    padding: 2vh;
+    justify-content: center;
 }
 
 .content-frame-right {
     background-color: azure;
-    margin: 6vh;
+    margin-top: 2vh;
 }
 
 .wbdv-module-list {
     color: azure;
     padding: 2vh;
-    background-size: cover;
 }
 
 .wbdv-module-item {
@@ -56,7 +58,21 @@
 
 .topic-frame {
     color: #333333;
-    margin: 2vh;
+    margin-bottom: 2vh;
     padding: 2vh;
     background-color: #f9ffff;
+}
+
+@media (max-width: 900px) {
+    .wbdv-new-page-btn, .wbdv-topic-pill {
+        display: none;
+    }
+
+    .active-topic {
+        display: block;
+        width: 100%;
+    }
+    .row {
+        padding-right: 0;
+    }
 }

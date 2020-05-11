@@ -2,6 +2,14 @@ html, body, .container-fluid {
     border: 0;
     margin: 0;
     padding: 0;
+    height: 100vh;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .whole-box {
@@ -27,6 +35,19 @@ h1 {
     padding-bottom: 1vh;
     color: azure;
     background-color: #555555;
+}
+
+.wbdv-title.wbdv-header {
+    padding-left: 12vw;
+}
+
+.wbdv-sort, .wbdv-list-layout, .wbdv-grid-layout {
+    margin-right: 10vh;
+}
+
+.nav-link {
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
 .user-form {
@@ -75,4 +96,34 @@ h6 {
 
 .wbdv-sort {
     padding-top: 1vh;
+}
+
+@media (max-width: 600px) {
+    .wbdv-owner, .wbdv-modified-date {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    [class*="col-"] {
+        max-width: 100%;
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .wbdv-sort, .wbdv-list-layout, .wbdv-grid-layout, .wbdv-header {
+        display: none;
+    }
+    .headers {
+        background-color: white;
+    }
+    .wbdv-label {
+        float: right;
+    }
+    .nav-item {
+        width: 100%;
+    }
+    .wbdv-new-course {
+        justify-content: center;
+    }
 }
