@@ -30,12 +30,12 @@
                 </div>
                 <div class="col-4 new-course">
                     <li class="nav-item float-left">
-                        <form class="form-inline">
+                        <form class="wbdv-field wbdv-new-course form-inline">
                             <input class="form-control" placeholder="New Course">
                         </form>
                     </li>
                     <li class="nav-item float-right">
-                        <a class="nav-link btn btn-dark rounded-circle" href="#">+</a>
+                        <a class="wbdv-button wbdv-add-course nav-link btn btn-dark rounded-circle" href="#">&plus;</a>
                     </li>
                 </div>
             </ul>
@@ -43,24 +43,170 @@
 
         <nav class="navbar navbar-dark bg-dark">
             <div class="col-1">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="wbdv-field wbdv-hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
             <div class="col-11">
-                <div class="navbar-brand float-left">CS4550 Java Server</div>
-                <div class="nav-item active float-right my-name">Andreas Petrides</div>
+                <div class="wbdv-label wbdv-course-manager navbar-brand float-left">Course Manager</div>
             </div>
         </nav>
 
-        <div class="container-fluid">
-            <ul class="list-group">
-                <li class="list-group-item">Item 1</li>
-                <li class="list-group-item">Item 2</li>
-                <li class="list-group-item">Item 3</li>
-                <li class="list-group-item">Item 4</li>
-                <li class="list-group-item">Item 5</li>
-            </ul>
+        <div class="headers d-flex flex-row nav align-items-center">
+            <div class="header-titles col-8">
+                <div class="d-flex flex-row">
+                    <div class="col-2"></div>
+                    <div class="col-3 wbdv-header wbdv-title ml-auto nav-item">Title</div>
+                    <div class="col-3 wbdv-header wbdv-owner nav-item">Owner</div>
+                    <div class="col-4 wbdv-header wbdv-last-modified nav-item">Last Modified</div>
+                </div>
+            </div>
+            <div class="header-organization col-2 align-items-center">
+                <div class="row">
+                    <a class="wbdv-button wbdv-grid-layout btn ml-auto nav-item">&square;</a>
+                    <a class="wbdv-button wbdv-list-layout btn ml-auto nav-item">&VerticalLine;</a>
+                    <a class="wbdv-header wbdv-sort ml-auto nav-item">&uparrow;&downarrow;</a>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="container-fluid all-classes">
+            <div class="d-flex flex-column class-list">
+                <h6>Today</h6>
+                <ul class="list-group justify-content-center">
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 1</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 2</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 3</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 4</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 5</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column class-list">
+                <h6>Yesterday</h6>
+                <ul class="list-group justify-content-center">
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 1</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 2</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 3</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 4</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 5</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="class-list">
+                <h6>Previous 7 days</h6>
+                <ul class="list-group justify-content-center">
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 1</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 2</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 3</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 4</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="wbdv-course wbdv-row align-items-center d-flex flex-row">
+                            <div class="wbdv-row wbdv-title mr-auto">Item 5</div>
+                            <div class="wbdv-row wbdv-owner mr-auto">me</div>
+                            <div class="wbdv-row wbdv-modified-date mr-auto">1:23 PM</div>
+                            <a href="#" class="wbdv-row wbdv-button wbdv-delete ml-auto btn rounded-circle">&times;</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>

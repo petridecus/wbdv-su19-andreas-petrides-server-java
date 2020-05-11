@@ -22,6 +22,13 @@ h1 {
     padding: 5vh;
 }
 
+.headers {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: azure;
+    background-color: #555555;
+}
+
 .user-form {
     padding-top: 5vh;
     padding-right: 3vh;
@@ -37,12 +44,35 @@ h1 {
     padding: 2vh;
 }
 
-.my-name {
+.add-course-btn {
     color: azure;
-    padding-top: 1vh;
 }
 
 .new-course {
     padding-left: 20vh;
     padding-right: 5vh;
+}
+
+.class-list {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2vh;
+}
+
+h6 {
+    margin: 2%;
+    margin-bottom: 1%;
+    color: #555555;
+}
+
+.all-classes {
+    margin-bottom: 5vh;
+}
+
+.wbdv-course {
+    padding: .2vh;
+}
+
+.wbdv-sort {
+    padding-top: 1vh;
 }
