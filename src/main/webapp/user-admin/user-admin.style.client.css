@@ -42,6 +42,10 @@ html, body, .container-fluid {
     width: 100%;
 }
 
+.list-content {
+    padding-bottom: 2vh;
+}
+
 @media (max-width: 900px) {
     .wbdv-password, .wbdv-first-name, .wbdv-last-name, .wbdv-role {
         display: none;
