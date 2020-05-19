@@ -1,0 +1,39 @@
+html, body, .container-fluid {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.user-admin-title {
+    border: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, #6666aa, #6666ff);
+}
+
+.title-heading {
+    padding-left: 10vw;
+}
+
+.container-fluid {
+    background-color: #333355;
+    display: block;
+}
+
+.user-admin-content {
+    padding: 5%;
+}
+
+.user-admin-table {
+    background-color: #eeeeff;
+}
+
+.head-labels, .head-inputs {
+    padding-top: 5vh;
+}
+
+.wbdv-user-row-template {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    border-bottom: #333355;
+}
