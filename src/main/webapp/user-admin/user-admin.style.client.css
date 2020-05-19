@@ -27,7 +27,7 @@ html, body, .container-fluid {
     background-color: #eeeeff;
 }
 
-.head-labels, .head-inputs {
+.head-labels {
     padding-top: 5vh;
 }
 
@@ -36,4 +36,55 @@ html, body, .container-fluid {
     padding-bottom: 1vh;
     padding-left: 1vw;
     border-bottom: #333355;
+}
+
+.user-admin-field {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .wbdv-password, .wbdv-first-name, .wbdv-last-name, .wbdv-role {
+        display: none;
+    }
+
+    .user-admin-content {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .head-labels {
+        padding-top: 2vh;
+        width: 100%;
+    }
+
+    .user-admin-field, .head-labels, .wbdv-add-btn, .wbdv-update, .wbdv-username, .wbdv-edit, .wbdv-delete, h5 {
+        width: 100%;
+        font-size: x-large;
+    }
+
+    .wbdv-add-btn, .wbdv-update {
+        padding-bottom: 2vh;
+    }
+
+    .wbdv-user-row-template {
+        background-color: white;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .fld-container {
+        padding-bottom: 5vh;
+    }
+    h5, .wbdv-role-fld, .wbdv-username {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2vh;
+    }
+
+    .user-admin-table {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
 }

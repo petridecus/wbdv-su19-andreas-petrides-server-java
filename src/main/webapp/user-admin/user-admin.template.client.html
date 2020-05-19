@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Admin</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -29,29 +30,31 @@
         <div class="user-admin-table">
             <div class="head-labels">
                 <div class="row">
-                    <div class="col-2">Username</div>
-                    <div class="col-2">Password</div>
-                    <div class="col-2">First Name</div>
-                    <div class="col-2">Last Name</div>
-                    <div class="col-2">Role</div>
-                    <div class="col-2"></div>
-                </div>
-            </div>
-            <div class="head-inputs">
-                <div class="row">
-                    <div class="col-2"><input class="wbdv-username-fld"/></div>
-                    <div class="col-2"><input type="password" class="wbdv-password-fld"/></div>
-                    <div class="col-2"><input class="wbdv-first-fld"/></div>
-                    <div class="col-2"><input class="wbdv-last-fld"/></div>
-                    <div class="col-2">
-                        <select class="wbdv-role-fld">
+                    <div class="col-2 fld-container">
+                        <h5>Username</h5>
+                        <input class="wbdv-username-fld user-admin-field"/>
+                    </div>
+                    <div class="col-2 fld-container">
+                        <h5>Password</h5>
+                        <input type="password" class="wbdv-password-fld user-admin-field"/>
+                    </div>
+                    <div class="col-2 fld-container">
+                        <h5>First Name</h5>
+                        <input class="wbdv-first-fld user-admin-field"/>
+                    </div>
+                    <div class="col-2 fld-container">
+                        <h5>Last Name</h5>
+                        <input class="wbdv-last-fld user-admin-field"/></div>
+                    <div class="col-2 fld-container">
+                        <h5>Role</h5>
+                        <select class="wbdv-role-fld user-admin-field">
                             <option>FACULTY</option>
                             <option>STUDENT</option>
                         </select>
                     </div>
                     <div class="col-2">
-                        <button class="btn wbdv-add-btn">&plus;</button>
-                        <button class="btn wbdv-update">&checkmark;</button>
+                        <button class="wbdv-add-btn">&plus;</button>
+                        <button class="wbdv-update">&check;</button>
                     </div>
                 </div>
             </div>
