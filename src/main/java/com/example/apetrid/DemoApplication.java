@@ -1,4 +1,4 @@
-package com.example.hw1;
+package com.example.apetrid;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

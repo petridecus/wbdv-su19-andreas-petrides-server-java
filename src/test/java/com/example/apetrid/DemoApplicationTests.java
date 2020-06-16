@@ -1,4 +1,4 @@
-package com.example.hw1;
+package com.example.apetrid;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
